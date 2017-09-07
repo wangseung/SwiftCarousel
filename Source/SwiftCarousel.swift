@@ -529,6 +529,6 @@ open class SwiftCarousel: UIView {
      
      */
     open func selectItem(_ choice: Int, animated: Bool) {
-        selectItem(choice, animated: animated, force: false)
+        selectItem(choice, animated: animated, force: true)
     }
 }
