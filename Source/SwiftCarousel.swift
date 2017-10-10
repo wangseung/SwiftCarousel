@@ -333,7 +333,7 @@ open class SwiftCarousel: UIView {
     }
     
     // MARK: - Gestures
-    open func viewTapped(_ gestureRecognizer: UIGestureRecognizer) {
+    @objc open func viewTapped(_ gestureRecognizer: UIGestureRecognizer) {
         if selectByTapEnabled {
             let touchPoint = gestureRecognizer.location(in: scrollView)
             if let view = viewAtLocation(touchPoint), let index = choices.index(of: view) {
